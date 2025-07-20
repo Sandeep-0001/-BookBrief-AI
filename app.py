@@ -1,5 +1,4 @@
 import streamlit as st
-import fitz  # PyMuPDF for PDF reading
 
 from summarize import call_openai_api, params
 from utilities import summarization_prompt_messages, split_text_into_sections

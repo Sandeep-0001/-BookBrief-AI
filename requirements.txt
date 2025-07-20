@@ -1,0 +1,6 @@
+streamlit==1.47.0
+requests
+PyMuPDF
+python-dotenv
+tiktoken
+pandas

@@ -6,7 +6,7 @@ from utilities import summarization_prompt_messages, split_text_into_sections
 
 st.set_page_config(page_title="Book Summarizer", layout="centered")
 
-st.title("&#128218; Book Summarizer")
+st.title("&#128218; BookBrief - AI")
 uploaded_file = st.file_uploader("Upload a `.txt` or `.pdf` file", type=["txt", "pdf"])
 
 # ---------- Utility to read PDF or TXT ----------

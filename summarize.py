@@ -12,10 +12,11 @@ from utilities import (
     memoize_to_file,
 )
 
-load_dotenv()
+import streamlit as st
 
-model_name = os.getenv("MODEL_NAME", "openai/gpt-3.5-turbo")
-api_key = os.getenv("OPENROUTER_API_KEY")
+api_key = st.secrets["OPENROUTER_API_KEY"]
+model_name = st.secrets.get("MODEL_NAME", "openai/gpt-3.5-turbo")
+
 
 book_path = "book.txt"  # Can be .txt or .pdf
 context_size = 16000
